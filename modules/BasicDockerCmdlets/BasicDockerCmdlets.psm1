@@ -75,6 +75,11 @@ function Start-Docker {
         $response="CONTAINER with name $Name is not exists"
         Write-Output $response
 
+    } elseif ($status.Contains("running")){
+
+        $response="CONTAINER with name $Name was previously started"
+        Write-Output $response
+
     }
 
 }
@@ -98,6 +103,11 @@ function Stop-Docker {
     } elseif ($status.Contains("non-existent")) {
 
         $response="CONTAINER with name $Name is not exists"
+        Write-Output $response
+
+    } else {
+
+        $response="CONTAINER with name $Name maybe was stopped previously"
         Write-Output $response
 
     }
