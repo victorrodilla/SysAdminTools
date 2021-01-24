@@ -15,3 +15,8 @@ _**VSCode, WSL 2.0 y docker** and Internet Connection
 docker build -t azcli .
 
 ```
+
+## References
+
+- [microsoft/azure-cli](https://www.github.com/Azure/azure-cli-docker)
+- [matsuu/azure-cli](https://github.com/matsuu/docker-azure-cli/)
