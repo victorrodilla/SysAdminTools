@@ -15,7 +15,12 @@ Docker Desktop 3.0
 
 _Para poder utilizar los comandos, necesitamos descargarnos el módulo en cualquier carpeta._ local.
 
-_Una vez descargado importamos el módulo:_
+_Una vez descargado,desde PowerShell importamos el módulo:_
+
+```pwsh
+Import-Module .\modules\BasicDockerCmdlets\BasicDockerCmdlets.psm1
+```
+
 
 _Si queremos comprobar que nos lo ha importao correctamente:_
 
