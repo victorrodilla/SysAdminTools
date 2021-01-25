@@ -33,7 +33,7 @@ function Get-DockerStatus {
     
     $output = New-Object PsObject -Property @{Name=$Name}
     
-    if (DockerExist -Name $Name) {
+    if (Get-DockerExist -Name $Name) {
 
         #Prepare JSON from docker inspect
         $json=docker inspect $Name | ConvertFrom-Json         #Only show docker status
